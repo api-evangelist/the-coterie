@@ -1,0 +1,14 @@
+generated: '2026-07-21'
+method: probed
+source: live probes of https://allocate.co/.well-known/*
+host: https://allocate.co
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+notes: >-
+  The Coterie (rebranded to Allocate, allocate.co) is a private-markets wealth
+  platform with no public API or auth server. No .well-known discovery documents
+  were found; absence is a valid, expected result for a company with no developer
+  surface.

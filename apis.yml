@@ -1,7 +1,28 @@
 aid: the-coterie
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/the-coterie.png
 name: The Coterie
-description: The Coterie is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  The Coterie is a financial technology company founded in 2022 by Ethan Agarwal,
+  Jeson Patel, and Chris Boies to give startup founders access to venture capital
+  investments, estate-planning strategies (including its ATOM Trust product), and
+  lending. Backed by Andreessen Horowitz, the company has since rebranded and now
+  operates as Allocate (allocate.co), positioning itself as "an operating system
+  for private markets" serving wealth advisors and asset managers with deal
+  sourcing, white-labeled fund creation, AI-powered portfolio management, and
+  unified reporting. The company publishes no public API, developer portal, or
+  SDKs; this profile captures its identity and public web surface for the API
+  Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/the-coterie/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +30,33 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebranded-to: Allocate (https://allocate.co)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Private Markets
+- Wealth Management
+- Venture Capital
+- Estate Planning
+- Investment
 apis: []
+common:
+- type: Website
+  url: https://allocate.co/
+- type: PrivacyPolicy
+  url: https://allocate.co/privacy-policy
+- type: DomainSecurity
+  url: security/the-coterie-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
